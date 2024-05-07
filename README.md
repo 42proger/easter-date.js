@@ -1,19 +1,44 @@
-# Easter Dates Calculator
+# Easter Date Calculation
 
 This project provides two algorithms for calculating the date of Easter in the Western (Catholic and Protestant) and Orthodox calendars.
 
 Based on Gauss's Easter algorithm:
 https://doi.org/10.1007/s00407-004-0078-5
 
+## Installing
+
+Install with npm
+
+```bash
+  npm install easter-date.js
+```
+or yarn:
+
+```bash
+  yarn add easter-date.js
+```
+
 ## Usage/Examples
 
-To use the algorithms, import them into your JavaScript code and pass the desired year as an argument. For example:
+To use the algorithms, import them into your JavaScript code:
+```javascript
+// ES Modules
+import { getWesternEaster, getOrthodoxEaster } from "easter-date.js";
+```
 
 ```javascript
-import { getWesternEaster, getOrthodoxEaster } from "./lib/easter.js";
+// CommonJS
+const { getWesternEaster, getOrthodoxEaster } = require('easter-date.js');
+```
 
-console.log(getWesternEaster(2024)); // Output: { day: 31, month: 3, year: 2024 }
-console.log(getOrthodoxEaster(2024)); // Output: { day: 5, month: 5, year: 2024 }
+and pass the desired year as an argument:
+
+```javascript
+getWesternEaster(2024); 
+// Output: { day: 31, month: 3, year: 2024 }
+
+getOrthodoxEaster(2024); 
+// Output: { day: 5, month: 5, year: 2024 }
 ```
 
 ## Run Locally
@@ -21,13 +46,13 @@ console.log(getOrthodoxEaster(2024)); // Output: { day: 5, month: 5, year: 2024 
 Clone the project
 
 ```bash
-  git clone https://github.com/42proger/easter.js
+  git clone https://github.com/42proger/easter-date.js
 ```
 
 Go to the project directory
 
 ```bash
-  cd easter.js
+  cd easter-date.js
 ```
 
 Install dependencies

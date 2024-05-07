@@ -1,23 +1,35 @@
 {
-  "name": "easter-js",
-  "version": "1.0.1",
-  "description": "This JavaScript function calculates the date of Easter in the Western and Orthodox calendars using Gauss's Easter algorithm. It takes a year as an argument and returns the date of Easter in the specified year. The algorithm was developed by Carl Friedrich Gauss and allows to determine the date of Easter in both the Catholic/Protestant and Orthodox calendars.",
+  "name": "easter-date.js",
+  "version": "0.1.0",
+  "description": "This JavaScript function calculates the Easter date in the Western and Orthodox calendars using Gauss's Easter algorithm. It takes a year as an argument and returns the Easter date in the specified year. The algorithm was developed by Carl Friedrich Gauss and allows the date of Easter to be determined in both the Catholic/Protestant and Orthodox calendars.",
+  "author": "42proger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/42proger/easter-date.js/issues"
+  },
+  "homepage": "https://github.com/42proger/easter-date.js#readme",
+  "keywords": [
+    "easter",
+    "date",
+    "algorithm",
+    "gauss",
+    "calendar"
+  ],
   "type": "module",
-  "main": "src/main.ts",
+  "main": "./lib/easter-date.cjs",
+  "module": "./lib/easter-date.js",
+  "types": "./src/types/types.d.ts",
   "exports": {
-    ".": "./lib/easter.js"
+    ".": {
+      "require": "./lib/easter-date.cjs",
+      "import": "./lib/easter-date.js",
+      "types": "./src/types/types.d.ts"
+    }
   },
   "scripts": {
     "build": "rollup -c",
     "test": "jest"
   },
-  "keywords": [
-    "js",
-    "javascript",
-    "algorithm"
-  ],
-  "author": "42proger",
-  "license": "MIT",
   "devDependencies": {
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/jest": "^29.5.12",
@@ -27,9 +39,5 @@
     "ts-jest": "^29.1.2",
     "tslib": "^2.6.2",
     "typescript": "^5.4.5"
-  },
-  "bugs": {
-    "url": "https://github.com/42proger/easter.js/issues"
-  },
-  "homepage": "https://github.com/42proger/easter.js#readme"
+  }
 }

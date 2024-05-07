@@ -8,5 +8,10 @@ node_modules/
 # Logs
 logs
 *.log
+Yarn-error.log
 
 .DS_Store
+
+# Folders and files to ignore
+lib/
+.npmignore
