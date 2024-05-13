@@ -1,7 +1,7 @@
 {
   "name": "easter-date.js",
-  "version": "0.1.0",
-  "description": "This JavaScript function calculates the Easter date in the Western and Orthodox calendars using Gauss's Easter algorithm. It takes a year as an argument and returns the Easter date in the specified year. The algorithm was developed by Carl Friedrich Gauss and allows the date of Easter to be determined in both the Catholic/Protestant and Orthodox calendars.",
+  "version": "0.1.1",
+  "description": "Calculating the date of Easter based on the Gauss algorithm.",
   "author": "42proger",
   "license": "MIT",
   "bugs": {
