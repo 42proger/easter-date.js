@@ -1,5 +1,9 @@
 # Easter Date Calculation
 
+[![NPM Type Definitions](https://img.shields.io/npm/types/easter-date.js)](https://www.npmjs.com/package/easter-date.js)
+[![CodeQL](https://github.com/42proger/easter-date.js/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/42proger/easter-date.js/actions/workflows/github-code-scanning/codeql)
+[![npm bund#le size](https://img.shields.io/bundlephobia/minzip/easter-date.js)](https://www.npmjs.com/package/easter-date.js)
+
 This project provides two algorithms for calculating the date of Easter in the Western (Catholic and Protestant) and Orthodox calendars.
 
 Based on Gauss's Easter algorithm:

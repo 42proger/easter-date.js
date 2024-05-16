@@ -1,6 +1,6 @@
 {
   "name": "easter-date.js",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Calculating the date of Easter based on the Gauss algorithm.",
   "author": "42proger",
   "license": "MIT",
