@@ -18,16 +18,17 @@
   "type": "module",
   "main": "./lib/easter-date.cjs",
   "module": "./lib/easter-date.js",
-  "types": "./src/types/types.d.ts",
+  "types": "./lib/main.d.ts",
   "exports": {
     ".": {
       "require": "./lib/easter-date.cjs",
       "import": "./lib/easter-date.js",
-      "types": "./src/types/types.d.ts"
+      "types": "./lib/main.d.ts"
     }
   },
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && npm run build:types",
+    "build:types": "tsc --declaration --emitDeclarationOnly --declarationDir lib src/main.ts",
     "test": "jest"
   },
   "devDependencies": {

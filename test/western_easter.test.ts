@@ -16,4 +16,8 @@ describe("getWesternEaster", () => {
   test("should return correct date for 2100", () => {
     expect(getWesternEaster(2100)).toEqual({ day: 28, month: 3, year: 2100 });
   });
+
+  test("should throw for non-integer year", () => {
+    expect(() => getWesternEaster(2024.5)).toThrow("year must be an integer");
+  });
 });

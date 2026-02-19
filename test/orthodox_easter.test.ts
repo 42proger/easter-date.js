@@ -16,4 +16,8 @@ describe("getOrthodoxEaster", () => {
   test("should return correct date for 2100", () => {
     expect(getOrthodoxEaster(2100)).toEqual({ day: 1, month: 5, year: 2100 });
   });
+
+  test("should throw for non-integer year", () => {
+    expect(() => getOrthodoxEaster(2024.5)).toThrow("year must be an integer");
+  });
 });

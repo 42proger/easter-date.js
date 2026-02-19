@@ -6,6 +6,10 @@
 import { EasterDate } from "../types/types";
 
 function getOrthodoxEaster(year: number): EasterDate {
+  if (!Number.isInteger(year)) {
+    throw new TypeError("year must be an integer");
+  }
+
   const a: number = year % 19,
     b: number = year % 4,
     c: number = year % 7,
