@@ -2,7 +2,7 @@
 
 [![NPM Type Definitions](https://img.shields.io/npm/types/easter-date.js)](https://www.npmjs.com/package/easter-date.js)
 [![CodeQL](https://github.com/42proger/easter-date.js/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/42proger/easter-date.js/actions/workflows/github-code-scanning/codeql)
-[![npm bundle size](https://img.shields.io/bundlephobia/minzip/easter-date.js)](https://www.npmjs.com/package/easter-date.js)
+[![install size](https://packagephobia.com/badge?p=easter-date.js)](https://packagephobia.com/result?p=easter-date.js)
 
 This project provides two algorithms for calculating the date of Easter in the Western (Catholic and Protestant) and Orthodox calendars.
 
